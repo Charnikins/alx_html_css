@@ -1,0 +1,2 @@
+Welcome to the Headphone Showcase Project
+Thank you for checking out our Headphone Showcase Project! This responsive web page is designed to highlight an impressive selection of headphones, ensuring an engaging experience for all users.

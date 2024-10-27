@@ -1,0 +1,92 @@
+body {  
+    margin: 0;  
+    font-family: 'Source Sans Pro', sans-serif;  
+    background: linear-gradient(to right, #2c3e50, #4ca1af);  
+    color: white;  
+}  
+
+header {  
+    display: flex;  
+    justify-content: space-between;  
+    align-items: center;  
+    padding: 20px;  
+}  
+
+.logo {  
+    font-size: 24px;  
+    font-weight: bold;  
+}  
+
+nav ul {  
+    list-style: none;  
+    display: flex;  
+    gap: 20px;  
+}  
+
+nav ul li a {  
+    color: white;  
+    text-decoration: none;  
+    transition: color 0.3s;  
+}  
+
+nav ul li a:hover,  
+nav ul li a:active {  
+    color: #FF6565; /* Link hover/active color */  
+}  
+
+main {  
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    height: calc(100vh - 60px);  
+    text-align: center;  
+}  
+
+.content {  
+    max-width: 1000px; /* Max width for content */  
+    width: 100%; /* Responsive width */  
+}  
+
+h1 {  
+    font-size: 36px;  
+    margin-bottom: 10px;  
+}  
+
+h2 {  
+    font-size: 24px;  
+    margin-bottom: 20px;  
+}  
+
+.cta-button {  
+    background-color: #e74c3c;  
+    color: white;  
+    border: none;  
+    padding: 10px 20px;  
+    font-size: 16px;  
+    cursor: pointer;  
+    border-radius: 5px;  
+    transition: opacity 0.3s;  
+    margin-bottom: 20px;  
+}  
+
+.cta-button:hover,  
+.cta-button:active {  
+    opacity: 0.9; /* Button hover/active opacity */  
+}  
+
+p {  
+    font-size: 16px;  
+    line-height: 1.5;  
+}  
+
+/* Responsive adjustments */  
+@media (max-width: 480px) {  
+    header {  
+        flex-direction: column;  
+    }  
+
+    nav ul {  
+        flex-direction: column;  
+        padding: 10px 0;  
+    }  
+}  
