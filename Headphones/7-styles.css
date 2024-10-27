@@ -1,0 +1,175 @@
+/* Reset CSS styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables for easy management */
+:root {
+    --primary-color: #FF6565;
+    --font-family: 'Source Sans Pro', sans-serif;
+    --max-width: 1000px;
+    --background-color: #f4f4f4;
+}
+
+/* General styles */
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    max-width: var(--max-width);
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 2em;
+    margin: 40px 0 20px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* What We Do Section */
+.what-we-do {
+    width: 100%;
+    max-width: var(--max-width);
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.service-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    flex: 1 1 30%;
+    margin: 20px;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+/* Our Results Section */
+.our-results {
+    width: 100%;
+    max-width: var(--max-width);
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.results {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.result-item {
+    flex: 1 1 30%;
+    margin: 20px;
+    text-align: center;
+}
+
+/* Pentagon styles */
+.pentagon {
+    width: 100px; /* Width of the pentagon */
+    height: 60px; /* Height of the pentagon */
+    background-color: var(--primary-color);
+    position: relative;
+    margin: 0 auto;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.pentagon span {
+    z-index: 1; /* Ensure text is above the background */
+}
+
+/* Animation Styles */
+.animate {
+    opacity: 0; /* Start hidden */
+    transform: translateY(20px); /* Start slightly lower */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.animate:hover {
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Move up */
+}
+
+/* Footer Styles */
+footer {
+    width: 100%;
+    max-width: var(--max-width);
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+.social-media {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.social-media li {
+    margin: 0 10px;
+}
+
+.social-media a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 480px) {
+    .service-items, .results {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}

@@ -1,0 +1,95 @@
+/* Reset CSS styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables for easy management */
+:root {
+    --primary-color: #FF6565;
+    --font-family: 'Source Sans Pro', sans-serif;
+    --max-width: 1000px;
+    --background-color: #f4f4f4;
+}
+
+/* General styles */
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    max-width: var(--max-width);
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 2em;
+    margin: 40px 0 20px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* What We Do Section */
+.what-we-do, .our-results {
+    width: 100%;
+    max-width: var(--max-width);
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.services, .results {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-item, .result-item {
+    flex: 1 1 30%;
+    margin: 20px;
+    text-align: center;
+}
+
+.icon {
+    font-size: 50px; /* Adjust icon size */
+    margin-bottom: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 480px) {
+    .services, .results {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
